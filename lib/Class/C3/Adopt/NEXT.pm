@@ -4,7 +4,7 @@ use warnings;
 package Class::C3::Adopt::NEXT;
 # ABSTRACT: make NEXT suck less
 
-our $VERSION = '0.14';
+our $VERSION = '0.15';
 
 use NEXT;
 use MRO::Compat;
