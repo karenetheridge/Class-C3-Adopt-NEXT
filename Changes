@@ -1,6 +1,6 @@
 Revision history for Class-C3-Adopt-NEXT
 
-{{ $NEXT }}
+0.14    2015-06-04 00:58:24Z
   * Switch from using List::MoreUtils to List::Util.
 
 0.13    2010-05-07 20:49:46Z
