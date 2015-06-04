@@ -1,7 +1,6 @@
 use strict;
 use warnings;
 use Test::More tests => 3;
-use Test::Exception 0.27;
 
 use lib 't/lib';
 
