@@ -4,8 +4,7 @@ use Test::More tests => 2;
 
 use Class::C3::Adopt::NEXT;
 
-use FindBin;
-use lib "$FindBin::Bin/lib";
+use lib 't/lib';
 
 use C3NT;
 

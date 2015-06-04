@@ -3,8 +3,7 @@ use warnings;
 use Test::More tests => 12;
 use Test::Exception 0.27;
 
-use FindBin;
-use lib "$FindBin::Bin/lib";
+use lib 't/lib';
 
 use vars qw/@warnings/;
 
