@@ -134,13 +134,13 @@ There are some inheritance hierarchies that it is possible to create which
 cannot be resolved to a simple C3 hierarchy. In that case, this module will
 fall back to using C<NEXT>. In this case a warning will be emitted.
 
-Because calculating the MRO of every class every time C<< ->NEXT::foo >> is
+Because calculating the method resolution order of every class every time C<< ->NEXT::foo >> is
 used from within it is too expensive, runtime manipulations of C<@ISA> are
 prohibited.
 
 =head1 FUNCTIONS
 
-This module replaces C<NEXT::AUTOLOAD> with it's own version. If warnings are
+This module replaces C<NEXT::AUTOLOAD> with its own version. If warnings are
 enabled then a warning will be emitted on the first use of C<NEXT> by each
 package.
 
