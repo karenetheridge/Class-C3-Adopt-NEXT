@@ -7,7 +7,7 @@ use lib 't/lib';
 
 use Class::C3::Adopt::NEXT;
 
-use vars qw/@warnings/;
+our @warnings;
 
 BEGIN { $SIG{__WARN__} = sub { push @warnings, @_ } }
 

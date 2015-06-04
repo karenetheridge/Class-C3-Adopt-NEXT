@@ -5,7 +5,7 @@ use Test::Exception 0.27;
 
 use lib 't/lib';
 
-use vars qw/@warnings/;
+our @warnings;
 
 BEGIN { $SIG{__WARN__} = sub { push @warnings, @_ } }
 
