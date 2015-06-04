@@ -8,7 +8,7 @@ our $VERSION = '0.14';
 
 use NEXT;
 use MRO::Compat;
-use List::MoreUtils qw/none/;
+use List::MoreUtils ();
 use warnings::register;
 
 =head1 SYNOPSIS
@@ -193,7 +193,7 @@ unimport
             if (length $c3_mro_ok{$class} && $c3_mro_ok{$class}) {
                 unless ($warned_for{$caller}) {
                     $warned_for{$caller} = 1;
-                    if (!@no_warn_regexes || none { $caller =~ $_ } @no_warn_regexes) {
+                    if (!@no_warn_regexes || List::MoreUtils::none { $caller =~ $_ } @no_warn_regexes) {
                         warnings::warnif("${caller} uses NEXT, which is deprecated. Please see "
                             . "the Class::C3::Adopt::NEXT documentation for details. NEXT used ");
                     }
