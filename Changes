@@ -1,6 +1,7 @@
 Revision history for Class-C3-Adopt-NEXT
 
 {{ $NEXT }}
+  * Switch from using List::MoreUtils to List::Util.
 
 0.13    2010-05-07 20:49:46Z
   * Stop shipping some author tests, so users stupid enough to run them won't
